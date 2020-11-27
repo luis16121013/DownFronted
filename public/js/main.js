@@ -1,4 +1,4 @@
-const apiURL = 'http://localhost:3000/api'
+const apiURL = 'https://api-down-go.herokuapp.com/api'
 const apiRegister = apiURL + '/v1/register'
 const apiLogin = apiURL + '/v1/login'
 
