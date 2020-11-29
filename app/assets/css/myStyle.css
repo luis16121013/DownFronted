@@ -1,0 +1,122 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.background-myFont{
+	background-color: rgb(89, 161, 255);
+}
+
+/*
+style formulario
+*/
+.txtForm{
+	width: 100%;
+	margin-top:20px;
+}
+
+.FormM{
+	margin-top:20%;
+	background-color:#34495e ;
+}
+.borderForm{
+	border: 2px #fff solid;
+	border-radius:15px;
+}
+.btnStyle{
+	margin-top:20px;
+}
+
+.btnExitStyle{
+	background-color:red;
+	border-radius:5px;
+	font-weight:bold;
+	text-align:center;
+}
+.btnExitStyle:hover{
+	background-color:#ff330e;
+}
+
+/*
+STYLE TITTLE
+*/
+.TitlePage{
+	font-family: 'Pacifico',cursive;
+}
+.TitleIcon::after{
+	content:'     \f135';/*f135 f072*/
+	font-family: fontAwesome;
+	position:relative;
+	color: rgb(29, 33, 248);
+	font-size: 40px;
+}
+
+/*
+efects menu potions
+*/
+
+.menuOption{
+	color:#fff;
+	transition: 0.2s;
+	font-size: 22px;
+}
+.menuOption:hover{
+	font-size:24px;
+	color:white;
+	padding:5px 10px;
+	/*background-color: rgb(221, 221, 128);*/
+	background-color:#ffc50e;
+	border: 2px solid white;
+	border-radius: 15px;
+	text-decoration: none;
+}
+
+
+
+/*
+STYLE CONTACT
+*/
+.cardContact{
+	background-color: rgb(23, 184, 184);
+	border: 3px solid rgb(0, 0, 0);
+	border-radius: 20px;
+	height: 100%;
+}
+.cardContact:hover{
+	background-color: rgb(12, 189, 100);
+	border: 3px solid rgb(255, 255, 255);
+}
+
+.listItemContact{
+	/*list-style: symbols(">");*/
+	list-style: none;
+	margin:0 30px;
+	padding:0;
+}
+.linkContact{
+	color: rgb(26, 27, 102);
+	font-size:18px;
+}
+
+/*
+STYLE INFORMATION
+*/
+.cardPageInfoTitle{
+	padding: 5px;
+	margin: 30px 30px 0 30px;
+	font-family: 'Pacifico';
+	color: #fff;
+	font-size: 27px;
+	background-color: #ffc50e;
+	border: 3px solid rgb(255, 255, 255);
+	border-radius: 15px;
+}
+.cardPageInfo{
+	padding: 4px;
+	margin: 9px 30px 0 30px;
+	font-family: 'Pacifico';
+	color: rgb(12, 126, 192);
+	font-size: 24px;
+	background-color: #ffd446;
+	border: 3px solid rgb(255, 255, 255);
+	border-radius: 15px;
+}
