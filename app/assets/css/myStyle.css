@@ -15,7 +15,7 @@ style formulario
 }
 
 .FormM{
-	margin-top:20%;
+	margin-top:10%;
 	background-color:#34495e ;
 }
 .borderForm{
@@ -120,3 +120,30 @@ STYLE INFORMATION
 	border: 3px solid rgb(255, 255, 255);
 	border-radius: 15px;
 }
+
+
+
+
+/* ---SPINER LOADER ---- */
+.spiner {
+	margin: auto;
+	width: 35px;
+	height: 35px;
+	border: 4px solid rgba(0,20,209,.9);
+	border-radius: 50%;
+	border-left-color : #fff;
+	animation: spin 1s ease infinite;
+}
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+
+
+

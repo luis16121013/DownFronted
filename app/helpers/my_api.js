@@ -7,5 +7,5 @@ export default{
     API_URL,
     API_REGISTER,
     API_LOGIN,
-    API_USERS
+    API_USERS,
 };

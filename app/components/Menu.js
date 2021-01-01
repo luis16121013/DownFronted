@@ -1,5 +1,6 @@
 export function Menu(){
     const $menu = document.createElement("div")
+    $menu.id="menu-nav"
     $menu.className = "row mt-4"
     $menu.appendChild(divColumn(menuOption("Inicio","/inicio")))
     $menu.appendChild(divColumn(menuOption("Contacto","/contacto")))

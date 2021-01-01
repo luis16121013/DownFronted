@@ -1,25 +1,33 @@
 export function Inicio(){
     const $row = document.createElement("div")
-    const $col = document.createElement("div")
-    $row.className=" container-fluid row mt-5"
-    $col.className="col-2 col-sm-2 "
+    $row.className=" container-fluid row" 
+    $row.style = "margin:30px 0";
 
-    $col.innerHTML=`<img width="100%" src="./app/assets/imgs/go-lang.svg">`
 
-    $row.appendChild($col)
-    $row.appendChild(col("col-10 col-sm-5 col-md-4 bg-info m-1",link2))
-    $row.appendChild(col("col-10 col-sm-5 col-md-4 bg-info m-1",link1))
-    $row.innerHTML+=``
+    $row.appendChild(col("col-12 col-sm-6 col-md-4 col-lg-3 ",Iframe(`https://www.youtube.com/embed/TEXcnUF3qZY`)))
+    $row.appendChild(col("col-12 col-sm-6 col-md-4 col-lg-3 ",Iframe(`https://www.youtube.com/embed/LL6z3-qbC_o`)))
     return $row
 }
 
 function col(style,content){
     const $col = document.createElement("div")
     $col.className = `${style}`
-    $col.style = `border-radius:15px; border:3px solid white;`
-    $col.innerHTML = `${content}`
+    $col.style = ''//`border-radius:15px; border:3px solid white;`
+    $col.appendChild(content)
     return $col
 }
 
-const link2 = `<iframe style="border-radius:15px;"width="100%" height="200" src="https://www.youtube.com/embed/TEXcnUF3qZY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
-const link1 = `<iframe style="border-radius:15px;"width="100%" height="200" src="https://www.youtube.com/embed/LL6z3-qbC_o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+function Iframe(httpRoute){
+    const $iframe = document.createElement('iframe');
+    $iframe.src=`${httpRoute}`;
+    $iframe.style=`border:4px solid white;border-radius:15px;`;
+    $iframe.width="100%";
+    $iframe.height="200"
+    $iframe.frameborder="0";
+    $iframe.allow=`accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture`;
+    $iframe.allowFullscreen;
+    return $iframe;
+}
+
+//const imgGopher=`<img width="100%" height="200px" src="./app/assets/imgs/go-lang.svg">`
+

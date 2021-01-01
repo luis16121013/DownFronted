@@ -1,7 +1,14 @@
 export function ajax(props){
-    let {url,cbSuccess} = props;
-
-    fetch(url)
+    let {url,met,data,cbSuccess} = props;
+    
+    const header = new Headers()
+    header.append('Content-Type','application/json')
+    
+    fetch(url,{
+        method: met,
+        headers:header,
+        body: JSON.stringify(data),
+    })
         .then(res=>res.ok?res.json(): Promise.reject(res))
         .then(json=>cbSuccess(json))
         .catch(err=>{
