@@ -1,5 +1,5 @@
 import { ajax } from '../helpers/ajax.js'
-//import  c  from '../helpers/my_api.js'
+import  c  from '../helpers/my_api.js'
 import  f from "../helpers/crypt.js"
 
 export function EventSingIn(){
