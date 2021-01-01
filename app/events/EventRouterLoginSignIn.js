@@ -15,8 +15,8 @@ export function EventSingIn(){
 
     ajax({
       //url:`http://localhost:3000/api/v1/users`,
-      url:"http://localhost:3000/api/v1/login",
-      //url:c.API_LOGIN,
+      //url:"http://localhost:3000/api/v1/login",
+      url:c.API_LOGIN,
       //url:"http://localhost:3000/login",
       met:"post",
       data:infoPOST,
