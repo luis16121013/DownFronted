@@ -1,5 +1,4 @@
 # :pig: DownFronted :pig:
---------------------------------------------
 <strong>Descripcion:</strong>
  Este proyecto estara focalizado en la enseñanza de los niños con sindrome de down para haci
  facilitarles el aprendizaje de la mejor manera.
